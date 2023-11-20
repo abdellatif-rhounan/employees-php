@@ -1,0 +1,39 @@
+@use "./helpers/variables" as *;
+
+@use "./helpers/reset";
+
+// Custom Style
+.container {
+  min-height: 100vh;
+  background-color: $container_bg_color;
+  padding: 20px 35px;
+}
+
+.heading {
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+
+.row-c {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+
+  input {
+    width: 290px !important;
+  }
+}
+
+.table {
+  th,
+  td {
+    padding: 13px 20px;
+  }
+
+  .actions {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+}
